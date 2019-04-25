@@ -11,3 +11,22 @@ html,body,#app{
 i.iconfont{
     margin-right: 10px;
 }
+
+/* 给业务页面的card卡片区设置样式 */
+.box-card{
+    margin-top: 15px;
+    box-shadow: 1 1px 1px rgba(0, 0,0, .15);
+}
+
+/* 给el-table表格设置样式 */
+.el-table{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+/* 给el-table表格设置样式 */
+.el-table,
+.el-pagination{
+    margin-top: 15px;
+    font-size: 12px;
+}

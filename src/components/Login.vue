@@ -7,18 +7,18 @@
             </div>
             <el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules">
                 <el-form-item prop="username">
-                    <el-input v-model="loginForm.username">
+                    <el-input v-model="loginForm.username" @keyup.enter.native="login()">
                         <i slot="prefix" class="iconfont icon-user"></i>
                     </el-input>
                 </el-form-item>
                 <el-form-item prop="password">
-                    <el-input v-model="loginForm.password" type="password">
+                    <el-input v-model="loginForm.password" type="password" @keyup.enter.native="login()">
                         <i slot="prefix" class="iconfont icon-3702mima"></i>
                     </el-input>
                 </el-form-item>
                 <el-row>
                     <el-col :push="7">
-                        <el-button type="primary" @click="login()">登录</el-button>
+                        <el-button type="primary" @click="login()" >登录</el-button>
                         <el-button type="info" @click="reset()">重置</el-button>
                     </el-col>
                 </el-row>
